@@ -39,6 +39,11 @@ const profileSchema = new mongoose.Schema({
     },
     github:{
 
+    },
+    attendance:{
+        type: Map, // Use Map data type
+        of: Number, // Values should be numbers
+        default: {} // Default is an empty object
     }
 })
 
